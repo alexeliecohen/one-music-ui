@@ -17,6 +17,7 @@ const StyledButton = styled.button<IBtn>`
   ${props => props.btnStyle === BtnCssType.error && 'red'};
   color: white;
 
+
   &:hover:enabled {
     cursor: pointer;
   }
@@ -29,9 +30,10 @@ const Button = (props: IBtn) => {
     const {btnStyle, btnType, title, disabled} = props;
     return (
         <StyledButton
+            {...props}
             type={btnType}
             disabled={disabled}
-            btnStyle={btnStyle}
+            // btnStyle={btnStyle}
         >
             {title}
         </StyledButton>

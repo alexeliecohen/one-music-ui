@@ -53,7 +53,7 @@ export const NavBarLink = styled.a`
 
 export const Drawer = styled.div`
   position: fixed;
-  display: ${props => props.display ? 'block' : 'none'};
+  // display: ${props => props.display ? 'block' : 'none'};
   left: 0;
   width: 30vw;
   height: 100vh;
